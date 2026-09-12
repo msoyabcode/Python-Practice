@@ -100,3 +100,64 @@
 
 
 # Reverse a number.
+# st = str(num)
+
+# for i in range(st, len(st)-1, -1):
+#     print(i)
+
+# num = int(input("Enter number: "))
+
+# reverse = 0
+
+# while num>0:
+#     digit = num % 10
+#     reverse = reverse * 10 + digit
+#     num = num // 10
+
+# print(reverse)
+
+# num = int(input("Enter number: "))
+# str = str(num)
+
+# reverse = ""
+# for i in range(len(str)-1, -1, -1):
+#     reverse = reverse+str[i]
+
+
+# print(reverse)
+
+
+
+
+
+# Check whether a number is a palindrome.
+
+# num = int(input("Enter number: "))
+
+# str_num = str(num)
+
+# reverse = ""
+
+# for i in range(len(str_num)-1, -1, -1):
+#     reverse = reverse + str_num[i]
+
+# if str_num == reverse:
+#     print(f"{str_num} is a palindrom")
+
+# else:
+#     print(f"{str_num} is not a palindrom")
+
+
+num = int(input("Enter number: "))
+original = num
+reverse = 0
+while num>0:
+    last_dgt = num % 10
+    reverse = reverse*10+last_dgt
+    num = num //10
+
+if original == reverse:
+    print("palindrom")
+
+else:
+    print("not palindrom")
